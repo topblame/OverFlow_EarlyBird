@@ -1,7 +1,7 @@
-ALTER SESSION SET "_ORACLE_SCRIPT"=true; -- 12c 버젼 이후의 Oracle 환경에서 사용자명 설정을 자유롭게 설정
+alter session set "_ORACLE_SCRIPT" = true; -- 12c 버젼 이후의 Oracle 환경에서 사용자명 설정을 자유롭게 함.
 
-create user overflow_earlybird -- overflow_earlybird 사용자 생성
-identified by 12345 -- 비밀번호는 12345로 설정
+create user overflow_earlybird -- overflow_earlybird 사용자 생성.
+identified by 12345 -- 비밀번호는 12345로 설정.
 default tablespace users -- 기본 테이블스페이스는 users
 temporary tablespace temp; -- 임시 테이블스페이스는 temp
 
